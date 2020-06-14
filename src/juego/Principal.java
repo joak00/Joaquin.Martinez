@@ -67,12 +67,6 @@ public class Principal extends JFrame {
 					MiJuego frame = new MiJuego();
 					frame.setVisible(true);
 					dispose();
-					//Se obtiene un Clip de sonido
-					Clip sonido = AudioSystem.getClip();
-					//Se carga con un fichero wav
-					sonido.open(AudioSystem.getAudioInputStream(new File("src/juego/ringtones-tema-zelda.wav")));
-					//Comienza la reproducción
-					sonido.start();
 				} catch (Exception e) {
 					e.printStackTrace();
 				}
@@ -114,5 +108,8 @@ public class Principal extends JFrame {
 					.addContainerGap(52, Short.MAX_VALUE))
 		);
 		contentPane.setLayout(gl_contentPane);
+		
+		
 	}
+	
 }
